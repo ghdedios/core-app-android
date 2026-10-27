@@ -27,10 +27,10 @@ queda en las descargas del perfil personal, que sí lo deja instalar. No hace fa
 3. Abrí el APK desde la notificación de la descarga o desde las descargas de Chrome. Si pregunta con qué abrirlo:
    **Instalador de paquetes → Solo una vez**.
 4. La primera vez dice que el teléfono no tiene permitido instalar aplicaciones desconocidas de esta fuente:
-   **Configuración → Otorgar permiso**. Después volvé y **abrí el APK otra vez** (el instalador no sigue solo). En
-   Android 16 puede aparecer un aviso ("Tu teléfono y tus datos están más expuestos…"): **Continuar**.
-5. "¿Deseas instalar esta app?" → **Instalar**.
-6. **Google Play Protect** muestra "Se recomienda analizar la app" porque es la primera vez que la ve. Sirve
+   **Configuración → Otorgar permiso**. Lo normal es que el instalador siga solo; si no, volvé y **abrí el APK otra
+   vez**. En Android 16 puede aparecer un aviso ("Tu teléfono y tus datos están más expuestos…"): **Continuar**.
+5. "¿Deseas instalar esta app?" → **Instalar** (si ya la tenías: "¿Deseas actualizar esta app?" → **Actualizar**).
+6. La primera vez, **Google Play Protect** muestra "Se recomienda analizar la app" porque no la conoce. Sirve
    cualquiera de las dos: **Analizar app**, o **Más detalles → Instalar sin analizar**. "Instalar sin analizar" es la
    línea que queda **debajo** del link "Cómo funciona Play Protect": si tocás el link, se cancela la instalación.
 7. "Se instaló la app." → **Abrir**. Pide el **micrófono** (Mientras la app está en uso). La primera vez que pases a
