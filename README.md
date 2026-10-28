@@ -34,7 +34,9 @@ queda en las descargas del perfil personal, que sí lo deja instalar. No hace fa
    cualquiera de las dos: **Analizar app**, o **Más detalles → Instalar sin analizar**. "Instalar sin analizar" es la
    línea que queda **debajo** del link "Cómo funciona Play Protect": si tocás el link, se cancela la instalación.
 7. "Se instaló la app." → **Abrir**. Pide el **micrófono** (Mientras la app está en uso). La primera vez que pases a
-   voz pide las **notificaciones** (Permitir): sin eso la voz no arranca.
+   voz pide las **notificaciones** (Permitir): sin eso la voz no arranca. La primera vez que saques una foto en el
+   chat pide la **cámara**: elegí **Mientras la app está en uso** (con "Solo esta vez", si la cámara queda abierta más
+   de un minuto, Android cierra la app).
 8. Si querés, volvé a activar Auto Blocker y sacale a Chrome el permiso de instalar apps desconocidas.
 
 La primera conversación después de instalar o de cambiar de org tarda hasta un minuto en arrancar. Desde la 1.5 la app
@@ -46,10 +48,22 @@ Un agente de servicio activo y un Embedded Service deployment para mobile (canal
 habilitado y el guest user activo). En la app se cargan cuatro datos: Organization ID, Service API URL (la del SCRT,
 `https://<tu-dominio>.my.salesforce-scrt.com`), el Developer Name del Embedded Service y el My Domain.
 
+## Mandar fotos o PDF
+
+El cliente puede mandar archivos cuando un **ejecutivo humano** toma la conversación: recién ahí aparece el **+** a la
+izquierda del cuadro de texto (con el agente de IA solo no está). Para eso tu agente tiene que poder pasar la
+conversación a una cola de Omni-Channel y el canal de la org tiene que dejar mandar archivos.
+
+Con el **+**: **Ver biblioteca fotográfica** (fotos), **Realizar una fotografía** (cámara) o **Cargar un archivo**
+(sólo PDF). PowerPoint y otros documentos no se pueden mandar: lo limita el SDK de Agentforce.
+
 ## Si algo no anda
 
 - Antes de la demo, en la configuración tocá **Probar conexión**: te dice si la org responde, si el deployment existe
   y es Mobile, y si el canal tiene voz. Cada campo avisa si el dato tiene algo raro.
+- Si el chat se queda en los tres puntitos: en la demo, **⋮ (arriba a la derecha) → Reconectar el agente**. Cierra esa
+  conversación, borra lo que el agente guardó en el teléfono y arranca otra (puede tardar hasta un minuto). No hace
+  falta desinstalar.
 - Si el agente no entra o algo falla, volvé a la configuración y tocá **Enviar diagnóstico** (abajo de todo, al lado
   de la versión). Mandanos ese archivo por Slack o WhatsApp: lleva la versión, el teléfono, los datos cargados y el log
   de la app.
