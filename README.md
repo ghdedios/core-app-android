@@ -37,14 +37,22 @@ queda en las descargas del perfil personal, que sí lo deja instalar. No hace fa
    voz pide las **notificaciones** (Permitir): sin eso la voz no arranca.
 8. Si querés, volvé a activar Auto Blocker y sacale a Chrome el permiso de instalar apps desconocidas.
 
-La primera conversación después de instalar puede quedarse en los tres puntitos. Cerrá el widget con la X y abrilo de
-nuevo: la segunda entra en unos segundos.
+La primera conversación después de instalar o de cambiar de org tarda hasta un minuto en arrancar. Desde la 1.5 la app
+conecta apenas abrís la demo, así que esa espera pasa mientras mostrás el sitio.
 
 ## Qué necesita tu org
 
 Un agente de servicio activo y un Embedded Service deployment para mobile (canal de Messaging for In-App, con Voice
 habilitado y el guest user activo). En la app se cargan cuatro datos: Organization ID, Service API URL (la del SCRT,
 `https://<tu-dominio>.my.salesforce-scrt.com`), el Developer Name del Embedded Service y el My Domain.
+
+## Si algo no anda
+
+- Antes de la demo, en la configuración tocá **Probar conexión**: te dice si la org responde, si el deployment existe
+  y es Mobile, y si el canal tiene voz. Cada campo avisa si el dato tiene algo raro.
+- Si el agente no entra o algo falla, volvé a la configuración y tocá **Enviar diagnóstico** (abajo de todo, al lado
+  de la versión). Mandanos ese archivo por Slack o WhatsApp: lleva la versión, el teléfono, los datos cargados y el log
+  de la app.
 
 ## Actualizar
 
